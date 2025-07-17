@@ -2,4 +2,4 @@
 set -e
 
 # Stop the running container (if any)
-echo "Hi"
+docker ps  -q --filter "publish=5000" | grep -q . && docker stop $(docker ps -q --filter "publish=5000")
