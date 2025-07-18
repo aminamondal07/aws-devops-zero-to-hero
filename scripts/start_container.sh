@@ -2,6 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
+docker rm -f
 docker pull amina0786/simple-python-flask-app
 
 
